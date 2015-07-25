@@ -1,11 +1,8 @@
-
 body {
-/*  IE8以下の代替の背景画像  */
-/*  background:url("teaser_bg.jpg") #333333; */
   background-attachment:fixed;
   background-size:cover;
   position:relative;
-  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+  font-family: HanziPen SC,"Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
   padding: 0;
   margin: 0;
 }
@@ -15,23 +12,18 @@ a {
   color: black;
 }
 
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
 .logo {
   width: 40px;
   text-align: center;
   display:block;
 }
 
-video {
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 0;
-  min-width:100%;
-  min-height:100%;
-  width:auto;
-  height:auto;
-  display:block;
-}
 h1,h2, p {      
   color: black;
   font-size: 60px;
@@ -43,6 +35,7 @@ h1,h2, p {
 
 h1 {
 }
+
 h2 {
   font-size: 40px;
   clear: both;
@@ -56,70 +49,9 @@ p{
 .contents {
 }
 
-.slides-container {
-  height: 100%; 
-  width: 100%;
-  background-color: black;
-  position: relative;
-}
-
-.slides-container img{
-  width: 100%;
-  animation-name: slides-container;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  opacity: 0;
-}
-
-.slides-container .img1{
-  display: block;
-  margin: 0 auto;
-}
-
-.slides-container .img2{
-  position: absolute;
-  top: 0;
-  animation-delay: 5s;
-}
-
-@keyframes slides-container{
-  0% {
-    opacity: 0;
-  }
-  12.5% {
-    opacity: 0.8;
-  }
-  37.5% {
-    opacity: 0.8;
-  }
-  50% {
-    opacity: 0;
-  }
-}
-
-.slides-container p{
-  padding-top: 200px;
-  margin: 0;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  color: white;
-}
-
-.slides-container h1{
-  padding-top: 300px;
-  margin: 0;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  color: white;
-}
-
-
 .discription {
   font-size: 14px;
 }
-
 
 .course {
   font-size: 30px;
@@ -149,5 +81,65 @@ img{
   display: block;
   float: left;
   margin-bottom: 50px;
+}
 
+.contents {
+  position: relative;
+}
+
+#slideshow {
+ position:relative;
+ width:100%;
+ height:600px;
+}
+#slideshow li {
+ position:absolute;
+ height:600px;
+ margin:0;
+ padding:0;
+ background-position:center top;
+ background-repeat:no-repeat;
+ list-style:none;
+}
+
+#main_title {
+  background-color:rgba(0,0,0,0.65);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 450px;
+  color: white;
+  padding-top: 150px;
+}
+
+.white {
+  color: white;
+}
+
+.menu_list {
+  width: 490px;
+  margin: 40px auto 0;
+}
+.menu_list li {
+  position: relative;
+	width: 80px;
+	height: 80px;
+  margin-right: 15px;
+	-webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+	border-radius: 50%;
+	border: 1px dotted #FF1289;
+  color: #FF1289;
+  display: inline;
+  float: left; 
+}
+.menu_list a {
+  position: absolute;
+  top: 20px;
+  left: 19px;
+  text-decoration: none;
+  margin: 10px auto;
+  color: #FF1289;
+  display: block;
 }

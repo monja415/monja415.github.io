@@ -1,22 +1,55 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="">  
   <link rel="stylesheet" type="text/css" href="main.css">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/slideshow.js"></script>
   <title>Japanese Cooking Class</title>
+  <meta content="fasebook用タイトル" property="og:title">
+  <meta content="fasebook用説明文" property="og:description">
+  <meta content="fasebook用イメージ画像（URL）" property="og:image"> 
 </head>
 
 <div class="contents">
 
-  <div class="slides-container">
-    <img class="img1" src="img/kezuriki.png">
-    <img class="img2" src="img/misosoup.png">
-    <p>日本の家庭料理を学ぶ２時間</p>
-      <h1>Japanese Cooking Class</h1>
+  <div id="slideshow">
+    <ul>
+      <li>
+        <img class="img1" src="img/kezuriki.png">
+      </li>
+      <li>
+        <img class="img2" src="img/misosoup.png">
+      </li>
+    </ul>
+  </div>
+ 
+  <div id="main_title">
+    <p class="white">日本の家庭料理を学ぶ２時間</p>
+    <h1 class="white">Japanese Cooking Class</h1>
+    <div class="menu_list">
+      <ul>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="">Menu</a>
+        </li>
+        <li>
+          <a href="">About</a>
+        </li>
+        <li>
+          <a href="">About</a>
+        </li>
+        <li>
+          <a href="">About</a>
+        </li>
+      </ul>
+    </div>
   </div>
 
-  </div>
-
-  <h2>About</h2>
+  <div id="about">
+    <h2>About</h2>
     <p>
       More than sushi and ramen? 
       <br>
@@ -48,6 +81,7 @@
       <br>
       We are not professional chefs, but we enjoy cooking!
     </p>
+  </div>
 
   <h2>Menu</h2>
     <p class="course">
