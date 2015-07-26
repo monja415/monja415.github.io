@@ -53,12 +53,6 @@ p{
   font-size: 14px;
 }
 
-.course {
-  font-size: 30px;
-  margin-top:30px;
-  margin-bottom: 10px;
-}
-
 .btn {
   border: 2px;
   border-style: solid;
@@ -70,8 +64,9 @@ p{
   border-radius: 4px;
 }
 
-.img_wrapper {
+.photos {
   width: 100%;
+  clear: both;
 }
 
 img{
@@ -142,4 +137,45 @@ img{
   margin: 10px auto;
   color: #FF1289;
   display: block;
+}
+
+#course_wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.course {
+  width: 800px;
+  clear: both;
+}
+.course_title {
+  font-size: 30px;
+  margin-top:30px;
+  margin-bottom: 10px;
+}
+.course_desc {
+  width: 500px;
+  float: left;
+}
+
+.course_image {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  float: left;
+  background-repeat: no-repeat;
+  background-size:cover;
+  margin-bottom: 15px;
+}
+.course_a {
+  background-image: url(img/kezuriki.png);  
+}
+.course_b {
+  background-image: url(img/course_b.jpg);  
+}
+.course_c {
+  background-image: url(img/course_c.jpg);  
+}
+.course_d {
+  background-image: url(img/class.jpg);  
 }
