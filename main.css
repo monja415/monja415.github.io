@@ -139,6 +139,10 @@ img{
   display: block;
 }
 
+#schedule {
+  clear:both;
+}
+
 #course_wrapper {
   width: 800px;
   margin: 0 auto;
@@ -165,7 +169,7 @@ img{
   float: left;
   background-repeat: no-repeat;
   background-size:cover;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 .course_a {
   background-image: url(img/kezuriki.png);  
