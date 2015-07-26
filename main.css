@@ -130,9 +130,9 @@ img{
   float: left; 
 }
 .menu_list a {
-  position: absolute;
+  position: relative;
   top: 20px;
-  left: 19px;
+  text-align: center;
   text-decoration: none;
   margin: 10px auto;
   color: #FF1289;
