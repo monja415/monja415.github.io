@@ -1,4 +1,5 @@
 body {
+  display: none;
   background-attachment:fixed;
   background-size:cover;
   position:relative;
